@@ -1,0 +1,463 @@
+html {
+  scroll-behavior: smooth;
+ }
+
+ a {
+  text-decoration: none;
+  color: rgb(43, 83, 194);
+ }
+ .scroll-target {
+  scroll-padding-top: 100vh; /* Adjust this value to match scroll-margin-top */
+  }
+
+ #down {
+  padding: 0;
+  scroll-margin-top: 600vh; /* Adjust this value as needed */
+ } 
+
+ #down::before {
+  content: "";
+  display: block;
+  height: 100px; /* Adjust this value to your design */
+  margin-top: -100px; /* Negative value equal to the height to offset scroll position */
+  visibility: hidden;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #d6e7f4;
+}
+
+/*ORDERS PAGE */
+.orders {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.orders .order {
+  width: 300px;
+  border: 1px solid #ebf1f6;
+  box-shadow: 0 0 2px 0 rgba(145,158,171,.2), 0 12px 24px -4px rgba(145,158,171,.12);
+}
+
+
+.events {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #de411b;
+}
+
+.events .event {
+  width: 300px;
+  border: 1px solid #ebf1f6;
+  box-shadow: 0 0 2px 0 rgba(145,158,171,.2), 0 12px 24px -4px rgba(145,158,171,.12);
+}
+
+.event-title {
+  color: #de411b
+}
+
+.event img {
+  height: 150px;
+}
+
+#ticketType {
+  width: 100%;
+}
+
+.actions {
+  flex-wrap: wrap;
+}
+
+.quantity {
+  margin: 12px auto;
+}
+
+#page-header {
+  background-color: #fff;
+  top: 0;
+}
+
+.link-item {
+  color: #0940d8
+}
+
+.logo {
+  height: 50px;
+  padding: 6px;
+}
+
+.add-btn {
+  background-color: #de411b;
+}
+
+.add-to-cart-btn {
+  background: #4e81b8;
+  margin: 15px auto;
+  display: block;
+  width: 90%;
+  height: 50px;
+  border-radius: 10px;
+  margin-bottom: 0px;
+  margin-top : 50px;
+}
+
+.add-to-cart-btn:hover{
+  background-color: #90b3e7;
+}
+
+.main-content-component {
+  margin-bottom: 40px;
+}
+
+.order-content-component {
+  margin-bottom: 40px;
+}
+
+
+/*HOMEPAGE ELEMENTS */
+.homepage-image {
+  opacity: 0.6;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  margin-bottom:10px;
+  display: block;
+}
+
+#lets-get-started-btn {
+  position: absolute;
+  background-color: rgb(22, 202, 58);
+  top: 50%;
+  left: 40%;
+}
+
+/*SEARCH BAR */ 
+form {
+  color: #555;
+  display: flex;
+  padding: 2px;
+  border: 1px solid currentColor;
+  border-radius: 5px;
+}
+
+
+
+.search-container {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  display: flex; /* Create a flex container */
+  align-items: center; /* Vertically align items */
+  gap: 0.5rem; /* Horizontal spacing between items */
+  float: center;
+  justify-content: center;
+
+  gap: 3rem;
+}
+.dropdown-container {
+  margin-top: 5px; /* Adjust margin as needed */
+}
+
+.search-bar {
+  float:center;
+  width: 200px;
+  height: 40px;
+  
+}
+
+#welcome {
+  position: absolute;
+  font-size: 70px;
+  font-style: bold;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  vertical-align: middle;
+  background: transparent;
+  top: 40%;
+  left: 25%;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  
+  text-align: center;
+  color: black;
+}
+
+.homepage-img-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+
+/*EVENT CARD */
+
+.product{
+  height:650px;
+  width:500px;
+
+  background:#ADC4CE;
+  position:relative;
+  border: #ffcec2;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.product-header {
+  margin-top: 10px;
+  height:40px;
+  position:relative;
+  padding:0px;
+  background-color: #96B6C5;
+  border-radius: 10px;
+}
+
+.product-name {
+  padding: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.event-img {
+  height: 100%;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.event-img:hover {
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.content-container {
+  width:100%;
+  display: flex; /* Use flexbox to arrange image and description side by side */
+}
+
+.image-container {
+  width: 460px;
+  height: 300px;
+}
+
+
+.event-description {
+  color: black;
+  text-align: justify;
+  margin-top: 25px;
+  width: 90%;
+  word-wrap: break-word;
+  height: 100px;
+  font-size: 18px;
+  font-style: bold;
+}
+
+.ticket-number {
+  margin-top: 20px;
+  border-radius: 5px;
+  margin-left: 3px;
+  width: 100px;
+
+}
+
+.ticket-dropdown {
+  width: 100px;
+  margin-top: 20px;
+  border-radius: 5px;
+  margin-left: 3px;
+}
+
+
+/*EVENT FLIPPING IMAGE */
+.flip-box {
+  margin-top: 10px;
+  background-color: transparent;
+  width: 460px;
+  height: 300px;
+  perspective: 1000px;
+  border-radius: 5px;
+
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border-radius: 5px;
+
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 5px;
+
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: #d6e7f4;
+  color: black;
+  transform: rotateY(180deg);
+  border-radius: 5px;
+
+  
+}
+
+/*FILTER*/
+.filter-container {
+  display: flex;
+  align-items: center; /* Vertically align items */
+  gap: 30px; /* Add spacing between the dropdowns */
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#filter-button {
+  margin-left: 50px;
+  border: #0940d8;
+  background-color: #3b970a;
+}
+
+/* ORDER CARD */
+
+.order-card {
+  height:200px;
+  width:90%;
+  background:#ADC4CE;
+  border-width: 10px;
+  border: #17100e;
+  margin-top: 20px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  
+}
+
+.order-card-text {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.buttons-container {
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#editButton {
+  height: 30px;
+  width: 270px;
+  margin-right: 10px;
+  background-color: #bc67fd; 
+  border-radius: 5px;
+
+}
+
+#editButton:hover {
+  background-color: #cd94f9;  
+}
+
+#saveButton {
+  height: 30px;
+  width: 270px;
+  background-color: #3b970a;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+#saveButton:hover {
+  background-color: #a4e97f; 
+}
+
+#cancelButton {
+  height: 30px;
+  width: 270px;
+  background-color: #f0d66c;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+#cancelButton:hover {
+  background-color: #fceba8; 
+}
+
+#deleteButton {
+  height: 30px;
+  width: 270px;
+  background-color: #ff0000;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+#deleteButton:hover {
+  
+  background-color: #e26e4b;
+ 
+}
+/*LOADER */
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #9f281d; /* Blue */
+  border-bottom: 16px solid #9f281d ;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/*TOASTER MESSAGE */
+.toaster {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
